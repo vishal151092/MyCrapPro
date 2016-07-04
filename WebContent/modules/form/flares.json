@@ -1,0 +1,44 @@
+[
+
+    {
+        "title": "Option 0",
+        "votes": 5
+    },
+    {
+        "title": "Option 1",
+        "votes": 4
+    },
+    {
+        "title": "Option 2",
+        "votes": 3
+    },
+    {
+        "title": "Option 3",
+        "votes": 7
+    },
+    {
+        "title": "Option 4",
+        "votes": 5
+    },
+    {
+        "title": "Option 5",
+        "votes":4
+    },
+    {
+        "title": "Option 6",
+        "votes": 6
+    },
+    {
+        "title": "Option 7",
+        "votes": 7
+    },
+    {
+        "title": "Option 8",
+        "votes": 8
+    },
+    {
+        "title": "Option 9",
+        "votes": 9
+    }
+
+]

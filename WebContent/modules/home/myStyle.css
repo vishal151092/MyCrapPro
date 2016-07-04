@@ -1,0 +1,63 @@
+@CHARSET "ISO-8859-1";
+
+.test_css{
+	 color: red;
+    font-size: 16px;
+}
+
+.ng-autocomplete-input {
+	outline: none;
+}
+
+.ng-autocomplete-holder {
+	position: absolute;
+	border: 1px solid #d4d4d4;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #fff;
+	width:20%;
+}
+
+.ng-autocomplete-holder > .ng-autocomplete-result {
+	display: block;
+	padding: 3px;
+	cursor: pointer;
+}
+
+.ng-autocomplete-holder > .ng-autocomplete-result > span {
+	display: block;
+}
+
+.ng-autocomplete-holder > .ng-autocomplete-result > span.ng-autocomplete-result-title {
+	font-size: 14px;
+}
+
+.ng-autocomplete-holder > .ng-autocomplete-result.hover {
+	color: #fff;
+	background: #3399FF;
+}
+
+
+
+
+
+
+
+
+
+/* 
+body {
+  margin: 0;
+  background: #222;
+  min-width: 960px;
+}
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+circle {
+  fill: none;
+  stroke-width: 2.5px;
+} */

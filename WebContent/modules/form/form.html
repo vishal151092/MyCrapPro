@@ -1,0 +1,51 @@
+
+
+form page
+I am {{name}} from {{place}}
+
+<div id="chartdiv" style="width=50%">
+</div>
+
+<br><br>
+ <input type="file" file-model="myFile"> 
+
+<input type="button" value="submit" ng-click="uploadNow()">
+ 
+ <center>
+ <table>
+ <tr>
+ <td>Name:</td>
+ <td><input type="text" ng-model="sendData.name" value="name"></td>
+ </tr>
+ <tr>
+<td>Address:</td>
+<td><input type="text" ng-model="sendData.address" value="address"></td>
+ </tr>
+ <tr>
+ <td><input type="submit" value="Submit" ng-click="addDetails()"></td>
+ </tr> 
+ </table>
+ </center>
+ 
+ 
+ 
+ 
+ 
+ 
+ <table border=1px>
+<tr><th>Name</th><th>Address</th></tr>
+ <tr ng-repeat="do in list"> 
+ <td> {{do.name}}   </td><td>   {{do.address}}</td>
+ <td><img src="modules/form/images/edit.png" height="15px" width="15px" ng-click="editDetails($index)">&nbsp
+ <img src="modules/form/images/delete.png" height="15px" width="15px" ng-click="deleteDetails($index)"></td>
+ </tr>
+ </table>
+ 
+ 
+ 
+ 
+
+
+
+ 
+

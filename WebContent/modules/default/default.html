@@ -1,0 +1,72 @@
+
+<style>
+input[type="text"] {
+    width: 600px;
+}
+td{vertical-align: top;}
+
+</style>
+<script>
+
+$(document).ready(function() {
+	  $('#summernote').summernote({
+		  height: 300,                 // set editor height
+
+		  minHeight: null,             // set minimum height of editor
+		  maxHeight: null,             // set maximum height of editor
+
+		  focus: true
+	  });
+	  
+	
+	});
+	
+
+
+
+</script>
+<div>
+<br><br><br><br>
+<section class="pull-left col-lg-9">
+<div class="col-lg-6">
+
+
+<table cellspacing="1" cellpadding="3">
+<tr>
+<td><label for="to_name">To:</label></td>
+<td><input type="text" ng-model="toNames" id="to_name"></td>
+</tr>
+<tr>
+<td><label for="subject_name">Subject:</label></td>
+<td><input type="text" ng-model="subjectName" id="subject_name"></td>
+</tr>
+<tr>
+<td><label for="cc_name">CC:</label></td>
+<td><input type="text" ng-model="ccNames" id="cc_name"></td>
+</tr>
+<tr>
+<td><label for="summernote">Message:</label></td>
+<td>
+<textarea class="bin" droppable name="summernote" ng-model="textData" id="summernote" cols="30" rows="10"></textarea>
+</td>
+</tr>
+</table>
+</div>
+
+
+</section>
+<aside class="pull-right col-lg-3 aside-list">
+<!-- <div class="item" id="item1" draggable>template 1</div> -->
+<div class="template.name template-box" bin="template.name" id="{{template.data}}"  ng-repeat="template in templates" draggable>{{template.name}}</div>
+
+
+</aside>
+
+<div class="col-lg-3">
+<input type="submit" value="Submit" ng-click="addDetails()">
+</div>
+<div class="col-lg-3">
+<input type="submit" value="Add Template" ng-click="addTemplate()">
+</div>
+
+</div>
